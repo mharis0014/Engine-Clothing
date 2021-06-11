@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../Images/girls.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-form {
+  width: 360px;
+  background: #f1f1f1;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form1 {
+  height: 450px;
+}
+.form2 {
+  height: 580px;
+}
+
+.logbtn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: linear-gradient(120deg, #e67e22, #cf6d17);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logbtn:hover {
+  background-position: right;
+}
+
+.bottom-text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.txtb {
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb input {
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.txtb span::after {
+  top: 100%;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(120deg, #e67e22, #cf6d17);
+  transition: 0.5s;
+}
+
+.focus + span::before {
+  top: -5px;
+}
+
+.focus + span::after {
+  width: 100%;
+}
+
+#err_msg {
+  margin-bottom: 20px;
+  background: linear-gradient(120deg, rgba(255, 0, 0, 0.5), red);
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.small {
+  color: red;
+  font-size: 11px;
+}
+
+.small2 {
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
+.logo-img img {
+  /* margin-left: 37%;
+  margin-top: -20px;
+  margin-bottom: 20px; */
+  margin: -20px 0 20px 37%;
+}
